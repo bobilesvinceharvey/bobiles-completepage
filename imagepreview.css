@@ -1,0 +1,41 @@
+.image-preview-trigger {
+  display: block;
+}
+
+.image-preview-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.88);
+  z-index: 9999;
+}
+
+.image-preview-modal:target {
+  display: flex;
+}
+
+.image-preview-modal img {
+  width: min(92vw, 1200px);
+  height: auto;
+  max-width: min(92vw, 1200px);
+  max-height: 88vh;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+}
+
+.image-preview-close {
+  position: absolute;
+  inset: 0;
+  display: block;
+  z-index: 3;
+}
+
+.image-preview-modal img {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
